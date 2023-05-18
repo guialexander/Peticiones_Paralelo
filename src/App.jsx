@@ -36,10 +36,19 @@ const persondata= postPersonajes.results
 setEpisodios(epidata)
 setCharacter(persondata)
 
-episodios.map((item)=>
+for (let i = 0; i < 20; i++) {
+  for (let j = 0; j < 10; j++) {
+    characterList.add(episodios[i].characters[j]);
+  }
+  console.log(characterList)
+}
+
+
+
+/*episodios.map((item)=>
 
 console.log(item.characters)
-)
+)*/
 
 
  
